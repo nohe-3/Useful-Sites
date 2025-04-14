@@ -21,3 +21,7 @@ ol.section-list a:hover {
   color: blue;
   text-decoration: underline;
 }
+
+.red {
+  color: red;
+}
