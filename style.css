@@ -1,0 +1,23 @@
+li.disc {
+  list-style-type: disc; /* リストのスタイルを黒丸に */
+}
+a {
+  color: #000; /* リンクの色を青に */
+  text-decoration: none; /* 下線を消す */
+}
+a:hover {
+  color: #f00; /* ホバーした時に色を赤に */
+  text-decoration: underline; /* 下線を表示 */
+}
+.attention {
+  color: rgb(255, 155, 0);
+}
+
+.safe {
+  color: rgb(126, 189, 0);
+}
+
+ol.section-list a:hover {
+  color: blue;
+  text-decoration: underline;
+}
