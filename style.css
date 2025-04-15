@@ -1,27 +1,127 @@
-li.disc {
+body {
+  background-color: #fffdd0; /* ← 余白の色 */
+  margin: 0;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #fff; /* ← 中央部分の色 */
+  padding: 20px;
+  border-left: 4px solid #cccaa7;
+  border-right: 4px solid #cccaa7;
+}
+
+h1 {
+  margin-top: 0px;
+  text-align: center; /* ← これだけで中央寄せ！ */
+  font-size: 70px;
+  border-bottom: 2px solid #333; /* ← これが下の線 */
+  padding-bottom: 10px; /* ← タイトルと線の間に余白 */
+  margin-bottom: 50px; /* ← 線と次の要素との間に余白 */
+}
+
+ol.section-list {
+  border: 2px solid #333; /* ← ボーダーをつける */
+  padding: 20px; /* ← 内側の余白（リストとボーダーの間隔） */
+  border-radius: 8px; /* ← 角を丸くしたい場合 */
+  background-color: #f9f9f9; /* ← ボックスの背景色 */
+  width: 50%; /* ボックスの横幅を50%に設定 */
+  margin: 100px auto; /* 上下の余白を100px、左右を自動で中央寄せ */
+  list-style-position: inside; /* 番号をリストアイテム内に表示 */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ol.section-list li {
+  margin-bottom: 10px;
+}
+
+ol.section-list h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* 下の余白を少し残す */
+  border-bottom: 2px solid #333; /* ← これが下の線 */
+  padding-bottom: 20px; /* ← タイトルと線の間に余白 */
+  margin-bottom: 20px; /* ← 線と次の要素との間に余白 */
+}
+
+ol.main {
+  list-style-position: inside; /* 番号をリストアイテム内に表示 */
+}
+
+ol.main h2 {
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+  color: #313131;
+  border-left: 4px solid #313131;
+  border-bottom: 2px solid #313131;
+  border-image: linear-gradient(to right, #313131 0% 50%, transparent 100%);
+  border-image-slice: 1;
+}
+
+ol.main ul {
+  list-style-position: inside; /* 番号をリストアイテム内に表示 */
+  padding-right: 0; /* 左の内側の余白を0に */
+  margin-right: 0; /* 左の外側の余白も0に */
+}
+
+ol.main ul h3 li {
   list-style-type: disc; /* リストのスタイルを黒丸に */
 }
+
+ol.main ul h3 {
+  margin-bottom: 5px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+ol.main p {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
 a {
-  color: #000; /* リンクの色を青に */
-  text-decoration: none; /* 下線を消す */
+  color: #000; /* リンクの色を黒に */
 }
 a:hover {
-  color: #f00; /* ホバーした時に色を赤に */
-  text-decoration: underline; /* 下線を表示 */
+  color: rgb(0, 255, 123); /* ホバーした時に色を黄緑に */
 }
+
 .attention {
   color: rgb(255, 155, 0);
 }
 
 .safe {
-  color: rgb(126, 189, 0);
+  color: rgb(0, 179, 255);
 }
 
 ol.section-list a:hover {
   color: blue;
-  text-decoration: underline;
 }
 
 .red {
   color: red;
+}
+
+.back {
+  position: fixed; /* 常に画面に固定 */
+  bottom: 20px; /* 下から20pxの位置 */
+  right: 20px; /* 左から20pxの位置 */
+  background-color: #333; /* 背景色 */
+  color: #fff; /* 文字色 */
+  padding: 10px 15px; /* 余白 */
+  border-radius: 5px; /* 角を丸く */
+  text-decoration: none; /* 下線を消す */
+  font-size: 14px;
+  opacity: 0.8; /* 少し透かす */
+  transition: opacity 0.3s;
+}
+
+.back:hover {
+  opacity: 1; /* ホバー時ははっきり見せる */
+  color: #fff;
 }
