@@ -125,3 +125,31 @@ ol.section-list a:hover {
   opacity: 1; /* ホバー時ははっきり見せる */
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  /* 画面が600px以下の時のスタイル */
+  h1 {
+    margin-top: 0px;
+    text-align: center; /* ← これだけで中央寄せ！ */
+    font-size: 50px;
+    border-bottom: 2px solid #333; /* ← これが下の線 */
+    padding-bottom: 10px; /* ← タイトルと線の間に余白 */
+    margin-bottom: 50px; /* ← 線と次の要素との間に余白 */
+  }
+
+  ol.section-list {
+    border: 2px solid #333; /* ← ボーダーをつける */
+    padding: 20px; /* ← 内側の余白（リストとボーダーの間隔） */
+    border-radius: 8px; /* ← 角を丸くしたい場合 */
+    background-color: #f9f9f9; /* ← ボックスの背景色 */
+    width: 90%; /* ボックスの横幅を50%に設定 */
+    margin: 100px auto; /* 上下の余白を100px、左右を自動で中央寄せ */
+    list-style-position: inside; /* 番号をリストアイテム内に表示 */
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  ol.main {
+    padding: 0px;
+  }
+}
